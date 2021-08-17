@@ -1,0 +1,80 @@
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+/* HEADER */
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: white;
+}
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+header ul {
+  display: flex;
+}
+header li {
+  padding-left: 1rem;
+}
+/* MAIN */
+.main-content {
+  position: relative;
+  top: 4.125rem;
+  width: 100%;
+}
+#introduction-section {
+  display: flex;
+  padding: 2rem 1.5rem;
+  background: ghostwhite;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#introduction-section .container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+.introduction-content{
+    flex-grow: 1;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction-content h1{
+  color: grey;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.25rem 0;
+}
+
+.introduction-content h2{
+  color: grey;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0.25rem 0;
+}
+
+.introduction-content .box{
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0.5rem 0;
+}
