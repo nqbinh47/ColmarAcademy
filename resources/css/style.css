@@ -1,6 +1,8 @@
 html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+  background: ghostwhite;
+
 }
 /* HEADER */
 header {
@@ -34,14 +36,12 @@ header li {
 #introduction-section {
   display: flex;
   padding: 2rem 1.5rem;
-  background: ghostwhite;
   align-items: center;
   justify-content: flex-start;
 }
 
 #introduction-section .container {
   width: 60%;
-  margin: 0 auto;
 }
 
 img {
@@ -77,4 +77,155 @@ img {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin: 0.5rem 0;
+}
+
+#information-section {
+  background-color: white;
+  display: flex;
+}
+
+#information-section .information-content{
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  
+}
+
+
+.information-content h1{
+  color: grey;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;  
+}
+.information-content h2{
+  color: grey;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 1.5rem 0; 
+}
+
+.information-content h3{
+  color: gray;
+  margin-top: 2.5rem;
+}
+
+.information-category {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.information-category .item{
+  display: flex;
+  border-left: 0.2rem solid ghostwhite;
+  border-bottom: 0.2rem solid ghostwhite;
+  padding: 1rem 1rem;
+}
+
+.information-category .container{
+  flex-basis: 35%;
+}
+.information-category .content{
+  flex-basis: 65%;
+}
+.information-category .box-content{
+  margin: 1rem;
+}
+
+.box-content h1{
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.box-content h2{
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.blue{
+  color: cornflowerblue;
+}
+
+.ghostwhite{
+  background-color: ghostwhite;
+}
+
+/* Courses section */
+#courses-section{
+  padding: 1rem 2rem;
+  text-align: center;
+}
+#courses-section .content {
+  margin: 1rem;
+}
+#courses-section .content h1{
+  color: grey;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.courses-category {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.courses-category .item {
+   flex-basis: 25rem;
+   background-color: white; 
+   margin: 1rem;
+}
+
+.courses-category .box-content{
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Thesis section */
+#thesis-section {
+  padding: 2rem 1.5rem;
+  background-color: white; 
+}
+#thesis-section .container{
+  padding: 2rem 0;
+  display: flex;
+}
+#thesis-section .content{
+  text-align: center;
+}
+#thesis-section .content h1{
+  color: grey;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.thesis-content {
+  width: 60%;
+}
+#thesis-section .thesis-content .content{
+  text-align: left;
+}
+.thesis-content h1{
+  color: grey;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.thesis-content h2{
+  color: grey;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 0.5rem; 
 }
