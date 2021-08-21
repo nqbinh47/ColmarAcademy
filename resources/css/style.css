@@ -128,13 +128,13 @@ img {
   padding: 1rem 1rem;
 }
 
-.information-category .container{
+.item .container{
   flex-basis: 35%;
 }
-.information-category .content{
+.item .content{
   flex-basis: 65%;
 }
-.information-category .box-content{
+.item .box-content{
   margin: 1rem;
 }
 
@@ -180,7 +180,7 @@ img {
   flex-wrap: wrap;
 }
 
-.courses-category .item {
+#courses-section .item {
    flex-basis: 25rem;
    background-color: white; 
    margin: 1rem;
