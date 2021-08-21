@@ -11,11 +11,20 @@ header {
   width: 100%;
   background: white;
 }
-header .content {
+header .desktop {
   display: flex;
   align-items: center;
   padding: 1.5rem;
 }
+header .mobile {
+  display: none;
+  padding: 1rem;
+}
+header .mobile ul{
+  display: flex;
+  justify-content: space-around;
+}
+
 header .logo {
   display: flex;
   align-items: center;
@@ -26,6 +35,18 @@ header ul {
 }
 header li {
   padding-left: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
 }
 /* MAIN */
 .main-content {
@@ -38,6 +59,7 @@ header li {
   padding: 2rem 1.5rem;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 #introduction-section .container {
@@ -57,15 +79,15 @@ img {
 .introduction-content h1{
   color: grey;
   line-height: 2.5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 0.25rem 0;
 }
 
 .introduction-content h2{
   color: grey;
-  line-height: 1.5rem;
-  font-size: 1.1rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin: 0.25rem 0;
 }
@@ -77,6 +99,7 @@ img {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin: 0.5rem 0;
+    font-size: 1.5rem;
 }
 
 #information-section {
@@ -138,15 +161,15 @@ img {
   margin: 1rem;
 }
 
-.box-content h1{
+.item .box-content h1{
   color: black;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.box-content h2{
-  color: black;
+.item .box-content h2{
+  color: grey;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   line-height: 1.5rem;
@@ -160,6 +183,58 @@ img {
   background-color: ghostwhite;
 }
 
+@media only screen and (max-width: 600px) {
+  #introduction-section .container {
+  width: 100%;
+  }
+  .introduction-content{
+    flex-grow: 1;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+  .introduction-content h1{
+  color: grey;
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.introduction-content h2{
+  color: grey;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.introduction-content .box{
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+#information-section .information-content{
+  display: none;
+}
+#information-section .information-category {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+.information-category .item{
+  display: block;
+  border-left: 0.2rem solid ghostwhite;
+  border-bottom: 0.2rem solid ghostwhite;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+}
 /* Courses section */
 #courses-section{
   padding: 1rem 2rem;
@@ -193,24 +268,25 @@ img {
 
 /* Thesis section */
 #thesis-section {
-  padding: 2rem 1.5rem;
+  padding: 2rem 0;
   background-color: white; 
 }
-#thesis-section .container{
+#thesis-section .thesis-container{
   padding: 2rem 0;
   display: flex;
 }
-#thesis-section .content{
+#thesis-section .header{
   text-align: center;
-}
-#thesis-section .content h1{
   color: grey;
   line-height: 2.5rem;
   font-size: 2rem;
   font-weight: bold;
 }
 .thesis-content {
+  padding: 0 1.5rem;
   width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 #thesis-section .thesis-content .content{
   text-align: left;
@@ -228,4 +304,43 @@ img {
   font-size: 1.1rem;
   font-weight: 400;
   margin-top: 0.5rem; 
+}
+.thesis-category .item{
+  display: flex;
+  border-left: 0.2rem solid ghostwhite;
+  border-bottom: 0.2rem solid ghostwhite;
+  padding: 1rem 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .thesis-content{
+    width: 100%;
+  }
+  .thesis-content .content{
+    display:none;
+  }
+  .thesis-category{
+    display:none;
+  }
+}
+footer{
+  position: relative;
+  top: 4.125rem;
+  width: 100%;
+}
+footer .content{
+  color:grey;
+  padding: 1rem 1.5rem;
+  display: flex;
+}
+
+.copyright{
+  flex-grow: 1;
+}
+footer ul {
+  display: flex;
+}
+footer li {
+  font-size: 0.8rem;
+  padding-left: 1rem;
 }
